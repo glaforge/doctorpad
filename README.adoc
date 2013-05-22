@@ -3,6 +3,7 @@
 Experimental editor for AsciiDoc documents, with rendering preview, built with Griffon and GroovyFX.
 
 Project developed during the Hackergarten session, at GR8Conf Euope 2013, with the participation of:
+
 - Andrés Almiray
 - Stephen Chin
 - Jörg Gellien
