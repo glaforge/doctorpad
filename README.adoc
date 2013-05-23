@@ -1,11 +1,21 @@
 = README
 
-Experimental editor for AsciiDoc documents, with rendering preview, built with Griffon and GroovyFX.
+Experimental editor for http://asciidoc.org[AsciiDoc] documents, with rendering preview, built with Griffon and GroovyFX.
 
-Project developed during the Hackergarten session, at GR8Conf Euope 2013, with the participation of:
+Project developed during the Hackergarten session, at GR8Conf Europe 2013, with the participation of:
 
 - Andrés Almiray
 - Stephen Chin
 - Jörg Gellien
 - Guillaume Laforge
 - Jochen Theodorou
+
+== Running the application
+
+Follow these steps to run the application
+
+. Make sure you have JDK7 or greater installed.
+. Make sure griffonw has executable permissions if on Linux or OSX.
+. Run the following command
+    +griffonw run-app+
+
