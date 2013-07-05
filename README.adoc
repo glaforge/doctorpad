@@ -18,4 +18,4 @@ Follow these steps to run the application
 . Make sure griffonw has executable permissions if on Linux or OSX.
 . Run the following command
     +griffonw run-app+
-
+. Write your Asciidoc content, and then hit CTRL+K to see the generated output
