@@ -21,7 +21,7 @@ mainWindow = application(title: app.getMessage('application.title', ' DoctorPad'
             splitPane(orientation: HORIZONTAL, prefHeight: 300, vgrow: 'always') {
                 dividerPosition(index: 0, position: 0.5)
                 dividerPosition(index: 1, position: 1.0)
-                textArea(prefRowCount: 20, prefColumnCount: 80, text: bind(model.inputProperty()))
+                textArea(wrapText: true, prefRowCount: 20, prefColumnCount: 80, text: bind(model.inputProperty()))
 
                 tabPane(side: Side.BOTTOM) {
                     tab(app.getMessage('application.tab.Preview.title', ' Preview')) {
