@@ -26,17 +26,17 @@ class DoctorpadController {
         .attributes(attr)
         .asMap()
 
-    def convertAction = {
+    def convertAction() {
         updatePreview()
     }
 
-    def newAction = {
+    def newAction() {
         model.documentFileName = null
         model.input = ''
     }
 
     @Threading(Threading.Policy.SKIP)
-    def openAction = {
+    def openAction() {
         FileChooser fileChooser = new FileChooser()
         fileChooser.title = app.getMessage('application.dialog.Open.title', 'Open document')
         String documentFileName = fileChooser.showOpenDialog(view.mainWindow)?.absolutePath
@@ -50,7 +50,7 @@ class DoctorpadController {
         }
     }
 
-    def saveAction = {
+    def saveAction() {
         if (model.documentFileName) {
             new File(model.documentFileName).write(model.input)
         } else {
@@ -59,7 +59,7 @@ class DoctorpadController {
     }
 
     @Threading(Threading.Policy.SKIP)
-    def saveAsAction = {
+    def saveAsAction() {
         FileChooser fileChooser = new FileChooser()
         fileChooser.title = app.getMessage('application.dialog.Save.title', 'Save document')
         String documentFileName = fileChooser.showSaveDialog(view.mainWindow)?.absolutePath
